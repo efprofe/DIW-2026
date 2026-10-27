@@ -1,0 +1,42 @@
+/* Aplicamos el modelo caja global para evitar que los paddings y los
+ bordes ensanchen los elementos sin que nos demos cuenta*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/*Ponemos border para identificar los bloques*/
+header {
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+
+nav {
+    border: 3px solid green;
+} 
+
+main {
+    border: 3px solid red;
+
+}
+
+section {
+    border: 2px solid orange;
+
+}
+
+div {
+    border: 2px dashed purple;
+}
+
+footer {
+    border: 3px solid brown;
+
+}

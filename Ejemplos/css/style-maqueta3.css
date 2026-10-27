@@ -1,0 +1,122 @@
+/* Aplicamos el modelo caja global para evitar que los paddings y los
+ bordes ensanchen los elementos sin que nos demos cuenta*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Unidades
+
+    - Absolutas:
+        - px:pixel        -> Bordes, medidas concretas y pequeños ajustes
+        - pt: puntos
+        - cm: centímetros
+    - Relativas:
+        - %: porcentaje   -> Relativo al contenedor
+        - rem:            -> Espaciados y tamaños relacionados con el tamaño de la fuente raíz.
+        - vw:             -> Medidas relaciona con el ancho de la ventana del dispositivo
+        */      
+
+
+/*Ponemos border para identificar los bloques*/
+header {
+
+    position: fixed;
+    /* Lo fijamos a la esquina superior izquierda*/
+    top:0;
+    left:0;
+    width: 100%;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+
+    background-color: #a2bde4;
+
+    height:25vh;
+
+    z-index: 100;
+}
+
+/* Compensamos el espacio del header */
+body {
+    margin: 0;
+    padding-top: 25vh;
+}
+
+
+/* Hacemos que la barra de navegación ocupe el 40% del ancho 
+y el 30% del alto del header */
+
+nav {
+
+    float: right;
+    border: 3px solid green;
+    background-color: rgb(158, 208, 158);
+    margin: 0px 1px 1px 1px;
+    width: max-content;   
+} 
+
+main {
+
+    border: 3px solid red;
+
+    background-color: rgb(208, 134, 134);
+}
+
+section {
+    border: 2px solid orange;
+    background-color: rgb(238, 197, 120);
+
+    padding: 20px;
+}
+
+
+div {
+    border: 2px dashed purple;
+    background-color:  rgb(219, 174, 219);
+
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+}
+
+
+footer {
+    border: 3px solid brown;
+
+    background-color: rgb(149, 100, 100);
+}
+
+
+nav ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+
+/* Hacemos que los elementos de la lista se muestren en la misma línea */
+nav li {
+    display: inline;
+    margin: 1px;
+} 
+
+nav a {
+    text-decoration: none; /* Quitamos subrayado a los enlaces*/
+    padding: .5rem 1rem;
+    color: black;
+}
+
+.div-ciclo {
+    display: inline-block;
+    width: max-content;
+    height: 150px;
+    vertical-align: middle; /* Alineamos los div verticalmente*/
+}
+
