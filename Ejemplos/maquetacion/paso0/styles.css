@@ -1,0 +1,25 @@
+/*
+    Elementos que se organizan en bloques -> ocupan todo el ancho 
+    disponible y se apilan uno debajo de otro:
+    
+        - html
+        - body
+        - header
+        - section
+        - nav
+        - main
+        - footer
+        - div
+        - p
+        - h1...h6
+        - ul, ol
+        - li
+
+    Elementos que fluyen en línea -> se mantienen en la misma línea y solo ocupen lo que miden 
+
+        - a
+        - img
+
+    ¿Por qué la página tiene margen si no hemos aplicado ningún estilo?
+
+*/

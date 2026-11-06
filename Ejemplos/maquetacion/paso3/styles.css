@@ -1,0 +1,71 @@
+/* PASO 3 - Control ancho de bloques 
+
+
+
+/* Aplicamos el modelo caja alterativo para evitar que los paddings y los
+ bordes ensanchen los elementos sin que nos demos cuenta*/
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Quitamos márgenes */
+body {
+    margin:0;
+}
+
+
+header {
+    border: 3px solid blue;
+    background-color: #a2bde4;
+
+    padding: 16px; 
+}
+
+
+nav {
+    border: 3px solid green;
+    background-color: rgb(180, 229, 180);
+} 
+
+
+main {
+    border: 3px solid red;
+    background-color: rgb(208, 134, 134);
+
+    padding: 16px; 
+
+}
+
+section {
+    border: 2px solid orange;
+    background-color: rgb(238, 197, 120);
+
+    padding: 16px; 
+    margin-bottom: 16px; 
+
+}
+
+div {
+    border: 2px dashed purple;
+    background-color:  rgb(219, 174, 219);
+
+    padding: 16px; 
+    margin: 8px; 
+}
+
+footer {
+    border: 3px solid brown;
+    background-color: rgb(149, 100, 100);
+
+    padding: 16px; 
+}
+
+

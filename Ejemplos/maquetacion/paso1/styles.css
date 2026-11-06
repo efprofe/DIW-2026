@@ -1,0 +1,66 @@
+/* PASO 1 - Hacemos visibles los bloques */
+
+
+/* Aplicamos el modelo caja global para evitar que los paddings y los
+ bordes ensanchen los elementos sin que nos demos cuenta*/
+
+/* Regla nueva*/
+html {
+  box-sizing: border-box;
+}
+
+/* Regla nueva*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/*Ponemos border para y color de fondo para identificar los bloques*/
+
+/* Regla nueva*/
+header {
+    border: 3px solid blue;
+    background-color: #a2bde4;
+}
+
+/* Regla nueva */
+nav {
+    border: 3px solid green;
+    background-color: rgb(180, 229, 180);  
+} 
+
+/* Regla nueva */
+main {
+    border: 3px solid red;
+    background-color: rgb(208, 134, 134);
+
+}
+
+/* Regla nueva */
+section {
+    border: 2px solid orange;
+    background-color: rgb(238, 197, 120);
+
+}
+
+/* Regla nueva */
+div {
+    border: 2px dashed purple;
+    background-color:  rgb(219, 174, 219);
+}
+
+/* Regla nueva */
+footer {
+    border: 3px solid brown;
+    background-color: rgb(149, 100, 100);
+
+}
+
+/* Observaciones:
+
+    - Cada bloque ocupa el 100% del ancho de su padre; si cambiamos el tamaño de la ventana se adapta.
+    - La altura de cada bloque depende de su contenido
+    - El nav ocupa lo mismo que el header ¿por qué?
+*/
