@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(230, 222, 222);
+}
+
+div {
+    border: 2px solid;
+    height: 50px;
+    width: 500px;
+    /* margin: 10px;*/
+    /* box-sizing: border-box; */
+}
+
+
+.caja1 {
+    border-color: red;
+    /* padding: 10px; */
+    /* margin-bottom: 10px; */
+    /*margin-top: 50px; */
+
+}
+
+.caja2 {
+    border-color: rgb(0, 255, 64);
+    /* margin-top: 20px; */
+
+}
+
+.caja3 {
+    border-color: rgb(0, 26, 255);
+    /* margin-top: 20px; */
+} 

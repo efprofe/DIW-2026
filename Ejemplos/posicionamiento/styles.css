@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width:500px;
+    margin: 0 auto;
+
+}
+
+p {
+    background: aqua;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+span {
+    background: red;
+    border: 1px solid black;
+}
+/********************************** POSICIONAMIENTO  ESTÁTICO *************************************/
+
+/* Posicionamiento estático, no cambia nada porque es el posicionamiento por defecto*/
+/* .p2 {
+    position: static;
+    background: yellow;
+} */
+
+
+/********************************** POSICIONAMIENTO  RELATIVO *************************************/
+
+/* Posicionamiento relativo, solo cambia si se utilizan las propiedades top, bottom, left y right,
+que determinan su posición respecto su posición original*/
+/* .p2 {
+    position:relative;
+    background: yellow;
+    top: 30px;
+    left: 20px;
+}  */
+
+/************************************ POSICIONAMIENTO ABSOLUTO ************************************/
+
+/* En este caso, elemento absolutamente posicionado se ubica a 30px de la parte superior del
+elemento contenedor y 30px desde la izquierda*/
+
+/* .p2 {
+    position: absolute;
+    background: yellow;
+    margin: 0px;
+    top: 10px;
+    left:20px;
+} */
+/* ¿Cuál es el elemento contenedor? Pues depende del valor de la propiedad
+    position de sus elementos ancestros:
+    
+    - Si ninguno de los ancentros tiene una posición definida (estática por defecto)
+      el elemento contenedor será el bloque contenedor inicial (tiene las 
+      dimensiones de la ventana y contiene al elemento html).
+
+    - Para cambiar el elemento respecto el que se posiciona un elemento posicionado absolutamente,
+      debemos establecer el posicionamiento de uno de los elementos ancestros. 
+      Por ejemplo para que se posicione absolutamente respecto el body,debemos establecer un
+      posicionamiento para el body. 
+    */
+    /* body {
+        position: relative;
+        border: 1px solid white;
+    } */
+
+    /* p:nth-of-type(1) {
+        position: absolute;
+        background: lime;
+        top: 10px;
+        right: 30px;
+        z-index: 1;
+    }  */
+
+    /*********************************** POSICIONAMIENTO FIJO ************************************/
+     /* body {
+        width: 500 px;
+        height: 1400px;
+        margin: auto;
+    }
+
+    h1 {
+        position: fixed;
+        top: 0;
+        width: 500px;
+        margin-top: 0;
+        background: white;
+        padding:10px;
+    }
+
+    p:nth-of-type(1) {
+        margin-top: 60px; 
+    } */
+
+/************************************** POSICIONAMIENTO ADHESIVO **********************************/
+
+/* Se trata de un híbrido entre posición relativa y fija. Permite que un elemento posicionado
+actúe como si estuviera relativamente posicionado hasta que se desplaza hasta un cierto umbral,
+a partir del cual queda fijo*/
+
+/* .p1 {
+    position: sticky;
+    top: 57px;
+}
+
+.p2 {
+    position: sticky;
+    top: 122px;
+    left: 30;
+} 
+
+.p3 {
+    position: sticky;
+    top: 202px;
+}
+
+.p4 {
+    position: sticky;
+    top: 279px;
+} */
+

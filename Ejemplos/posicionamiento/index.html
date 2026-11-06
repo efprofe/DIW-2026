@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Flujo básico de un documento</h1>
+
+    <p class="p1">
+        Soy un elemento de nivel de bloque. Los elementos de bloque adyacentes 
+        colocan en una nueva línea.
+    </p>
+
+    <p class="p2">
+        Por defecto ocupamos el 100% del ancho de nuestro elemento padre y nuestra 
+        altura es igual a la del contenido de nuetro elemento hijo. Nuestro ancho y
+        altura total es igual a nuestro contenido + relleno + borde
+    </p>
+
+    <p class="p3">
+        Estamos separados por nuestros márgenes. Debido a la colisión de márgenes,
+        estamos separados por el ancho de uno de nuestros márgenes, no de ambos.
+    </p>
+
+    <p class="p4">
+        Elementos inline <span>como este</span> y <span>este otro</span> se sitúan
+        en la misma línea entre sí, y junto a los nodos de texto adyacentes, si hay
+        espacio en la misma línea. Elemento inline que desbordan
+        <span>pasan a una nueva líne si es posible - como este que contiene texto</span>-, o simplemente pasan a una nueva línea si no lo es, tal y como lo hará esta imagen:
+        <img
+            src="https://mdn.github.io/shared-assets/images/examples/long.jpg"
+            alt="una sección ancha pero corta de una foto en la que aparecen varias telas" />
+    </p>
+    
+</body>
+</html>

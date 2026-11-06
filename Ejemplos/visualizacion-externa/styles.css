@@ -1,0 +1,32 @@
+ * {
+    box-sizing: border-box;
+ }
+ 
+ p {
+    border: 1px solid;
+    /* display: inline; */
+}
+
+/* div {
+    width:60%;
+} */
+
+.p1 {
+    border-color: red;
+    /* width: 30%; */
+    /* padding: 30px; */
+    /* vertical-align: middle; En los elementos de bloque esta propiedad es ignorada por los navegadores */
+}
+
+.p2 {
+    border-color: rgb(83, 171, 140);
+    /* height: 40px; */
+    /* width: 40%; */
+}
+
+.p3 {
+    border-color: rgb(175, 189, 51);
+    /* height: 50px; */
+    /* width: 20%; */
+
+} 
