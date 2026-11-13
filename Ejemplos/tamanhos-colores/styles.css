@@ -1,0 +1,95 @@
+h1 {
+    font-size: 2em;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/*efecto bola de nieve*/
+
+/* .tamanho-fuente div {
+    font-size: 2em;
+} */
+
+.tamanho-elementos div{
+    background: rgb(198, 236, 245);
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+/*Ejemplo colores RGB*/
+.luzRGB-decimal {
+    color: rgb(0, 255, 0);
+}
+
+.luzRGB-porcentajes {
+    color: rgb(0%, 100%, 0%);
+}
+
+.luzRGB-hex {
+    color: #00FF00;
+}
+.luzRGB-hex-reducido {
+    color: #0F0;
+}
+
+/*Ejemplo color HSL*/
+
+.color-HSL {
+    background-color: hsl(180, 50%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+/*Ejemplo color RGBA*/
+
+#p1-rgba {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+#p2-rgba {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+#p3-rgba {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+#p4-rgba {
+    background-color: rgba(192, 192, 192, 0.3);
+}
+
+#p5-rgba {
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
+#p6-rgba {
+    background-color: rgba(255, 0, 255, 0.3);
+}
+
+/*Ejemplo color HSLA*/
+
+#p1-hsla {
+    background-color: hsla(120, 100%, 50%, 0.3);
+}
+
+#p2-hsla {
+    background-color: hsla(120, 100%, 75%, 0.3);
+}
+
+#p3-hsla {
+    background-color: hsla(120, 100%, 25%, 0.3);
+}
+
+#p4-hsla {
+    background-color: hsla(120, 60%, 70%, 0.3);
+}
+
+#p5-hsla {
+    background-color: hsla(290, 100%, 50%, 0.3);
+}
+
+#p6-hsla {
+    background-color: hsla(290, 60%, 70%, 0.3);
+}
