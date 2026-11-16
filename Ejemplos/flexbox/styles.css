@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.contenedor-pre {
+    background-color: blue;
+    display: none;
+}
+
+.contenedor-post {
+    background-color: rgb(0, 255, 242);
+     display: none;
+}
+
+
+
+.contenedor {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.item1, .item2, .item3 {
+    /* width: 100px;
+    height: 50px; */
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+    background-color: rgb(240, 219, 95);
+}
+
+.item3 {
+    background-color: rgb(225, 140, 208);
+}
+
+/* PROPIEDADES DEL CONTENEDOR PADRE */
+
+
+/* display: Define un contenedor flex */
+/*.contenedor {
+    display: flex;*/ /* flex | inline-flex */
+/* } */
+
+/* flex-direction: Define el eje principal */
+/*.contenedor {
+    flex-direction: row;*/ /* row | column | row-reverse | column-reverse */
+/* } */
+
+/* flex-wrap: Indica qué elementos hijo se deben transladar cuando no hay suficiente espacio */
+/*.contenedor {
+    flex-wrap: wrap;*/ /* nowrap | wrap | wrap-reverse */
+/*}*/
+
+/* flex-flow: Permite especificar las propiedades flex-direction y flex-wrap en una sola */
+/*.contenedor {
+    flex-flow: row wrap;
+}*/
+
+/* justify-content: Define la alineación de los elementos en el eje principal */
+/*.contenedor {
+    justify-content: space-between;*/ /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+/* } */
+
+/* align-items: Alinea los contenedores hijos sobre el eje cruzado (en cada línea) */
+/*.contenedor {
+    height: 400px;
+    align-items: flex-start;*/ /* flex-start | flex-end | center | stretch */
+/* } */
+
+/* Si hay un alto definido stretch lo respeta */
+/*.item1 {
+    height: 100px;
+}*/
+
+/* align-content: alinea los elmentos hijos respecto todo el contenedor (solo funciona con wrap) */
+/* .contenedor { */
+    /* justify-content: space-around;  */
+    /* align-items: center; */
+    /* align-content: flex-start;*/ /* flex-start | flex-end | center | stretch | space-between | space-around */
+/* } */
+
+/* gap: Controla el espacio que ay entre los items flex */
+/*.contenedor {
+    justify-content: space-around;
+    gap: 10px 10px;*/ /* row-gap column-gap */
+/* } */
+
+/* PROPIEDADES DE LOS CONTENEDORES HIJO (FLEX ITEMS) */
+
+/* order: Especifica el orden utilizado para disponer los elementos hijo en su contenedor padre */
+/*.item1 {
+    order:1;*/ /* Valor 0 por defecto. Puede tomar valores negativos */
+/*}
+.item2 {
+    order:2;
+}*/
+
+/* align-self: Permite dar (o anular) una alineación a un item, diferente a la del resto */
+/*.item1 {
+    align-self: auto;*/ /* auto | strectch | center | flex-start | flex-end | baseline */
+/*}*/
+
+/* flex-basis: Especifica el tamaño inicial (antes de distribuir el espacio) que va a tener un elemento hijo */
+/*.item1 {*/
+    /* width: 50px; */
+    /*flex-basis: auto;*/ /* auto por defecto */
+/*}*/
+
+/* flex-grow: Factor de crecimiento */
+/*.contenedor {
+   flex-wrap: nowrap; 
+}
+
+.item1 {
+    width: 200px;
+    flex-grow: 1;
+}
+
+.item2 {
+    width: 200px;
+    flex-grow: 1;
+}
+
+.item3 {
+    width: 200px;
+    flex-grow: 1;
+}*/
+/* flex-shrink: factor de decrecimiento (encogimiento) de un elemento */
+/*
+.item1 {
+    flex-shrink: 2;
+}
+
+.item2 {
+    flex-shrink: 1;
+}
+
+.item3 {
+   flex-shrink: 1; 
+}
+*/
+/* flex: concentra las propiedades flex-grow, flex-shrink y flex-basis */
+/*.item1 {
+    flex: 1;*/ /* Valores predefinidos: initial | auto | none | # */
+    /*flex: initial;*/ /*0 1 auto*/
+    /*flex: auto;*/ /*1 1 auto*/
+    /*flex: none;*/ /*0 0 auto*/
+    /*flex: 1;*/ /* 1 1 0*/
+/*}*/
