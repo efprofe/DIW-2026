@@ -1,0 +1,48 @@
+
+.click {
+    border: 2px solid rgb(74, 74, 149);
+}
+
+.click img {
+        display:block;
+        width: 40%;
+    }
+
+
+.click:after {
+    content:"En pantalla grande";
+    font-size: 2rem;
+}
+
+
+@media (min-width: 450px) and (max-width:800px) {
+
+    .click {
+        border-color: rgb(117, 204, 117);
+        
+    }
+    
+    .click img {
+        width: 50%;
+    }
+
+    .click:after {
+        content:"Tablet"
+        
+
+    }
+}
+
+@media (max-width: 449px) {
+    .click {
+        border-color: rgb(101, 17, 17)(199, 91, 91);
+        overflow:visible;
+    }
+
+    .click img {
+        width: 90%;
+    }
+    .click:after {
+        content: "Movil";
+    }
+}
