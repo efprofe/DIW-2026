@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    font-family: sans-serif;
+    background-color: rgb(183, 183, 242);
+}
+
+.grid-container div {
+    border: 1px solid rgb(27, 32, 164);
+    border-radius: 10px;
+    background-color: rgb(122, 219, 219);
+    text-align: center;
+}
+
+/** display **/
+/*grid | inline-grid*/
+
+.grid-container {
+    display: grid;
+    background-color: rgb(219, 192, 192);
+}
+
+/** Definición del espaciado y tamaño de las columnas **/
+/* grid-template-columns:
+- longitud: px, rem, em. vh, wh
+- porcentaje: %
+- automático: auto: el tamaño de las filas/columnas viene determinado por el tamaño del contenedor y por el tamaño del contenido.
+- fracciones: fr 
+- min-content: establece el tamaño de cada fila/columna en función del elemento más pequeño de la fila/columna
+- max-content: establece el tamaño de cada fila/columna en función del elemento de mayor tamaño de la fila columna.
+- fit-content (arg): el tamaño se ajusta desde el tamaño mínimo hasta el min(arg, max-content)
+- minmax()
+- repeat
+- auto-fit: Añade o quita columnas de una fila dependiendo del espacio disponible
+- auto-fill: Cuando no hay más columnas con caontenido para rellenar, rellena el espacio con columnas vacías.
+*/
+
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Definición del espaciado y tamaño de las filas */
+/* grid-template-rows:
+    Mismas opciones que  grid-template-rows
+*/
+
+.grid-container {
+    /* grid-template-rows: 150px 200px; */
+    grid-auto-rows: 150px; /* Se aplica a las filas que no están explícitamente definidas */
+    /* grid-auto-columns: 150px; */
+    /*grid-auto-flow: column;*/ /*Dirección del flujo de contenido*/
+}
+
+/*Separación entre filas*/
+.grid-container {
+    row-gap: 10px;
+    column-gap: 10px; 
+    gap: 10px;
+    padding: 10px;
+}
+
+/*** Alineación de elementos ***/
+
+/** align-items | justify-items | place-items **/
+.grid-container {
+    align-items: center;    /* start | end | center | stretch */ /* alineación vertical (dentro de la fila) */
+    justify-items: stretch; /* Alineación horizontal (dentro de la columna) */ 
+    place-items: stretch; /* Combina las dos propiedades anteriores */
+}
+
+/** align-content | justify-content | align-self | justify-self **/
+ /* align-content: Alinea todos los elementos respecto a su contenedor
+   stretch | start | end | center | space-between | space-around | space-evenly*/
+ /* justify-content: stretch |*/
+
+.grid-container {
+    min-height: 800px; /* Especificamos altura para tener espacio libre y ver el efecto de las propiedades*/
+    align-content: center; 
+    justify-content: space-evenly;
+    place-content:  stretch; /* Combina las propiedades anteriores */
+}
+
+
+.diferente {
+    align-self: stretch; 
+    justify-self: stretch;
+    place-self: stretch; /* Combina las dos propiedades anteriores*/
+}
+
+/** Espaciado y posicionamiento utilizano líneas **/
+
+
+/*.diferente {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-column: 2 / 4; *//* Aplica en una línea las dos propiedades anteriores*/
+    /* grid-column: 2 / span 2; Equivalente a la anterior */
+
+    /* grid-row-start: 2;
+    grid-row-end: 4;
+    grid-row: 2 / 4; 
+   
+}*/
+
+/** Cambiar nombres de las líneas **/
+
+/* .grid-container {
+    grid-template-columns: [primera] 1fr [segunda] 1fr [tercera] 1fr [cuarta];
+} */
+
+/* .diferente {
+    grid-column: primera / cuarta;
+    z-index: 1;
+} */
+
+/* .sobre {
+    grid-column: primera / segunda;
+    grid-row: 1 / 4;   
+} */
+
+
+/** Áreas **/
+
+/* grid-area: row-start / col-start / row-end / col-end */
+.diferente {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+/* Modificamos HTML */
+
+.grid-container {
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    grid-template-columns: 2fr 1fr minmax(150px, 1fr);
+    grid-template-rows: 100px 1fr 100px;
+}
+
+/* Simplificado*/
+
+/* grid-template */
+.grid-container {
+    grid-template: 
+    "header header header" 100px 
+    "main main aside" 1fr 
+    "footer footer footer" 100px / 
+    2fr 1fr minmax(150px, 1fr);
+}
+
+/* grid */
+grid-container {
+    grid:  /* Resetea las propiedades de las celdas implícitas y el flujo automático*/ 
+    "header header header" 100px 
+    "main main aside" 1fr 
+    "footer footer footer" 100px / 
+    2fr 1fr minmax(150px, 1fr);
+}
